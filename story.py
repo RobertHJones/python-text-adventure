@@ -4,8 +4,8 @@ import time # to be able to add a pause
 answer_A = ["A", "a"]
 answer_B = ["B", "b"]
 answer_C = ["C", "c"]
-yes = ["Y", "y", "yes"]
-no = ["N", "n", "no"]
+yes = ["Y", "y", "yes", "Yes"]
+no = ["N", "n", "no", "No"]
 yes_no = ["yes", "no"]
 
 
@@ -15,7 +15,7 @@ print('"' + '...' + username + '"' + " you mutter bitterly \n")
 # intro section
 print('"Oh yeah? Well ' + username + ' my friend" (the sarcasm in his voice is palpable), "I was just wondering if you have the cash to actually pay for all those drinks?')
 def intro():
-    answer = input('"Do you have the cash?" (Y/N) \n')
+    answer = input(" 'Do you have the cash?' (Y/N) \n")
     if answer in yes:
         option_pay()
     elif answer in no:
@@ -48,6 +48,9 @@ def option_pay():
 
 
 def option_nopay():
-    print('"Bad"')
+    print("The bartender is silent for a few moments, before exploding with rage. 'Are you serious?' he yells in your face, his deranged bloodshot eyes rolling back into his head. 'Right, that's it - Marge, call the boys!' he turns and shouts through an open doorway behind him. A short globular woman with a weary expression waddles out of this door. 'What boys?' she asks the bartender (who is presumably her husband). He immediately rounds on her 'Goddammit Marge, we've been over this!' he starts... ")
+    answer = input("Do you A - Use the distraction to quietly sneak out, B - Smash the bartender over the head with a nearby bottle? Or C - Wait patiently for him to finish his argument. (A/B/C) \n")
+    if answer in answer_A:
+        print("escape!")
     option_nopay()
 intro()                
