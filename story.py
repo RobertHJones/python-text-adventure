@@ -28,7 +28,7 @@ def intro():
 
 def option_pay():
     print("The bartender gives you a vacant stare as you hand over the last of your meagre supply of cash. You ease yourself off the bar stool and stagger drunkenly to the exit. As you leave the dingy bar, the sun stings your squinting eyes and you realise that it's still early in the afternoon. Your thoughts unwillingly turn towards the events of last week and sighing heavily you feel an invisible weight being placed on top your shoulders. You barely hear the screeching tyres, and then everything fades to darkness...")
-    time.sleep(5)
+    time.sleep(4)
     answer = ""
     turn = ""
     while answer not in yes:
@@ -44,7 +44,17 @@ def option_pay():
         else:
             print("You allow yourself to rest for a few more moments")
             time.sleep(2)
-    option_pay()   
+    option_pay()
+    
+def option_hospescape():
+    print("As you look over at the emaciated, almost corpse-like frame of the old man, his gaze turns to meet yours. One glance at his milky eyeballs tells you that this man is blind, and yet as you face him a grating cackle emerges from his toothless mouth. 'Hey boy', he wheezes, 'when you fall asleep I'm gonna gut you.' He reaches under his pillow and pulls out a rusty scalpel. 'Stole this from a doctor when they took my sight away, I did'.")
+    print("He lets out another unpleasant laugh as you turn away from him uneasily.")
+    answer = input("Later on that evening you find yourself growing sleepy, but the old man's words echo inside your head. Allow yourself to fall asleep? (Y/N) \n")
+    if answer in no:
+        option_escape()
+    elif answer in yes:
+        print("You can't believe that the crazy blind old man could actually harm you and you close your eyes wearily. Moments later you feel a sharp pain shooting through your chest - you look up to see the old man bending over you with his scalpel. You just have time to meet his dead eyes before he pierces your throat. I'm afraid he killed you " + username + ". (GAME OVER)")
+        quit()
 
 
 def option_nopay():
