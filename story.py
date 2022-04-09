@@ -56,7 +56,14 @@ def option_hospescape():
         print("You can't believe that the crazy blind old man could actually harm you and you close your eyes wearily. Moments later you feel a sharp pain shooting through your chest - you look up to see the old man bending over you with his scalpel. You just have time to meet his dead eyes before he pierces your throat. I'm afraid he killed you " + username + ". (GAME OVER)")
         quit()
 
-
+def option_escape():
+    print("Wary of the guileless sincerity you sensed from the deranged old man, you try to force yourself from the hospital bed.")
+    print("As your legs touch the floor, they crumple on impact and you unceremoniously collapse in a heap. Your body is wracked by excruitiating agony, but you recall the old man and his scalpel, and force yourself to your feet.")
+    answer = input("You manage to reach the window and find it slightly ajar. Pushing it open further, you see a long drop down to the ground below. Do you A - try to climb out the window? B - Go back to get your bedsheets to tie it up and use it to climb down? Or C - try to find another way to escape?")
+    if answer in answer_A:
+        print("You carefully lower yourself out of the open window, making sure to play your feet on the ledge below. Unfortunately your legs buckle and you fall to your doom. Goodbye " + username + ". (GAME OVER)")
+    elif answer in answer_B:
+        print("You turn around and creep back to your bed, gather up the bedsheets and tie them together. Attaching one end securely to the window handle you begin to make your descent.")
 def option_nopay():
     print("The bartender is silent for a few moments, before exploding with rage. 'Are you serious?' he yells in your face, his deranged bloodshot eyes rolling back into his head. 'Right, that's it - Marge, call the boys!' he turns and shouts through an open doorway behind him. A short globular woman with a weary expression waddles out of this door. 'What boys?' she asks the bartender (who is presumably her husband). He immediately rounds on her 'Goddammit Marge, we've been over this!' he starts... ")
     answer = input("Do you A - Use the distraction to quietly sneak out, B - Smash the bartender over the head with a nearby bottle? Or C - Wait patiently for him to finish his argument. (A/B/C) \n")
