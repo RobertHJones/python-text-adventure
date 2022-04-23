@@ -70,6 +70,9 @@ def option_escape():
     elif answer in answer_C:
         option_door()
 
+def option_door():
+    print("You don't fancy escaping from such a height and instead half-heartedly try the door. To your surprise you find it unlocked, and moments later you're hobbling down the hospital corridor as fast as you can make yourself.")
+
 def option_nopay():
     print("The bartender is silent for a few moments, before exploding with rage. 'Are you serious?' he yells in your face, his deranged bloodshot eyes rolling back into his head. 'Right, that's it - Marge, call the boys!' he turns and shouts through an open doorway behind him. A short globular woman with a weary expression waddles out of this door. 'What boys?' she asks the bartender (who is presumably her husband). He immediately rounds on her 'Goddammit Marge, we've been over this!' he starts... ")
     answer = input("Do you A - Use the distraction to quietly sneak out, B - Smash the bartender over the head with a nearby bottle? Or C - Wait patiently for him to finish his argument. (A/B/C) \n")
