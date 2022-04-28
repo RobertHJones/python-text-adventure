@@ -71,7 +71,9 @@ def option_escape():
         option_door()
 
 def option_door():
-    print("You don't fancy escaping from such a height and instead half-heartedly try the door. To your surprise you find it unlocked, and moments later you're hobbling down the hospital corridor as fast as you can make yourself.")
+    print("You don't fancy escaping from such a height and instead half-heartedly try the door. To your surprise you find it unlocked, and moments later you're hobbling down the hospital corridor as fast as you can push yourself. \n")
+    print("Seeing several doctors coming the other way, you dive into a nearby broom closet. \n")
+    answer = input("Do you take A - the red broom, B - the green broom or C - huh, why would I take a broom?")
 
 def option_nopay():
     print("The bartender is silent for a few moments, before exploding with rage. 'Are you serious?' he yells in your face, his deranged bloodshot eyes rolling back into his head. 'Right, that's it - Marge, call the boys!' he turns and shouts through an open doorway behind him. A short globular woman with a weary expression waddles out of this door. 'What boys?' she asks the bartender (who is presumably her husband). He immediately rounds on her 'Goddammit Marge, we've been over this!' he starts... ")
