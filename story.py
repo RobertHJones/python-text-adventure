@@ -71,9 +71,21 @@ def option_escape():
         option_door()
 
 def option_door():
-    print("You don't fancy escaping from such a height and instead half-heartedly try the door. To your surprise you find it unlocked, and moments later you're hobbling down the hospital corridor as fast as you can push yourself. \n")
+    print("You don't fancy escaping from such a height and instead half-heartedly try the door. To your surprise you find it unlocked, and moments later you're hobbling down the hospital corridor as fast as you can force yourself. \n")
     print("Seeing several doctors coming the other way, you dive into a nearby broom closet. \n")
     answer = input("Do you take A - the red broom, B - the green broom or C - huh, why would I take a broom?")
+    if answer in answer_A:
+        print("Okay someone clearly never played Granny's Garden. This isn't The Matrix...red = danger! The red broom blows up in your face putting a somewhat abrupt end to your adventure. Goodbye " + username + ". (GAME OVER)")
+        quit()
+    elif answer in answer_B:
+        print("Great choice. You fly off on the broomstick to a faraway land, where your adventures will be continued in Text Adventure Part Two™. Congratulations " + username + ", this is about the closest you can come to winning this adventure!")
+        quit()    
+    elif answer in answer_C:
+        print("Because this is a text adventure where you do all kind of absurd whimsical actions! Okay I'll let you off this time...")
+        option_keepGoing()
+
+def option_keepGoing():
+    print("Okay")
 
 def option_nopay():
     print("The bartender is silent for a few moments, before exploding with rage. 'Are you serious?' he yells in your face, his deranged bloodshot eyes rolling back into his head. 'Right, that's it - Marge, call the boys!' he turns and shouts through an open doorway behind him. A short globular woman with a weary expression waddles out of this door. 'What boys?' she asks the bartender (who is presumably her husband). He immediately rounds on her 'Goddammit Marge, we've been over this!' he starts... ")
