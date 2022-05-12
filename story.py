@@ -75,10 +75,10 @@ def option_door():
     print("Seeing several doctors coming the other way, you dive into a nearby broom closet. \n")
     answer = input("Do you take A - the red broom, B - the green broom or C - huh, why would I take a broom?")
     if answer in answer_A:
-        print("Okay someone clearly never played Granny's Garden. This isn't The Matrix...red = danger! The red broom blows up in your face putting a somewhat abrupt end to your adventure. Goodbye " + username + ". (GAME OVER)")
+        print("Okay someone clearly never played Granny's Garden. This isn't The Matrix...red = danger! The red broom blows up in your face bringing a somewhat abrupt end to your adventure. Goodbye " + username + ". (GAME OVER)")
         quit()
     elif answer in answer_B:
-        print("Great choice. You fly off on the broomstick to a faraway land, where your adventures will be continued in Text Adventure Part Two™. Congratulations " + username + ", this is about the closest you can come to winning this adventure!")
+        print("Great choice. You fly off on the broomstick to a faraway land, where your adventures will be continued in Text Adventure Part Two™. Congratulations " + username + ", this is about the closest you can come to winning!")
         quit()    
     elif answer in answer_C:
         print("Because this is a text adventure where you do all kind of absurd whimsical actions! Okay I'll let you off this time...")
@@ -92,5 +92,7 @@ def option_nopay():
     answer = input("Do you A - Use the distraction to quietly sneak out, B - Smash the bartender over the head with a nearby bottle? Or C - Wait patiently for him to finish his argument. (A/B/C) \n")
     if answer in answer_A:
         print("escape!")
+    if answer in answer_B:
+        print("Grabbing a nearby bottle off the bar, you bring it down on the barman's head with as much force as you can muster. There is a sickening cracking sound and his body crumples and falls to the floor, where he lies in a growing pool of blood. 'Oh my god you killed him!' his wife (now widow) wails, and in her desperation grabs a shotgun the bartender must have kept underneath the bar, points it at you and KERBLAM, you are now a corpse sans head. Sorry about that " + username + ". GAME OVER")
     option_nopay()
 intro()                
