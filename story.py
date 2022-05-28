@@ -95,6 +95,6 @@ def option_nopay():
     if answer in answer_B:
         print("Grabbing a nearby bottle off the bar, you bring it down on the barman's head with as much force as you can muster. There is a sickening cracking sound and his body crumples and falls to the floor, where he lies in a growing pool of blood. 'Oh my god you killed him!' his wife (now widow) wails, and in her desperation grabs a shotgun the bartender must have kept underneath the bar, points it at you and KERBLAM, you are now a corpse sans head. Sorry about that " + username + ". GAME OVER")
     if answer in answer_C:
-        print()
+        print("Unfortunately this argument is going to last a long time. Like, a really long time. Eventually you get so bored of waiting you fall asleep. You sleep for so long that your name becomes Rip Van " + username + " and unfortunately this adventure doesn't have time to wait for you to wake up. (GAME OVER)")
     option_nopay()
 intro()                
