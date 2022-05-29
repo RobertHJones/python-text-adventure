@@ -81,7 +81,7 @@ def option_door():
         print("Great choice. You fly off on the broomstick to a faraway land, where your adventures will be continued in Text Adventure Part Two™. Congratulations " + username + ", this is about the closest you can come to winning!")
         quit()    
     elif answer in answer_C:
-        print("Because this is a text adventure where you do all kind of absurd whimsical actions! Okay I'll let you off this time...")
+        print("Because this is a text adventure where you do all kind of absurd whimsical actions! I'll let you off this time...")
         option_keepGoing()
 
 def option_keepGoing():
