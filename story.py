@@ -85,7 +85,7 @@ def option_door():
         option_keepGoing()
 
 def option_keepGoing():
-    print("Okay")
+    print("Broomless, you emerge from the closet. Brushing the cobwebs from your hair, you make for the exit.")
 
 def option_nopay():
     print("The bartender is silent for a few moments, before exploding with rage. 'Are you serious?' he yells in your face, his deranged bloodshot eyes rolling back into his head. 'Right, that's it - Marge, call the boys!' he turns and shouts through an open doorway behind him. A short globular woman with a weary expression waddles out of this door. 'What boys?' she asks the bartender (who is presumably her husband). He immediately rounds on her 'Goddammit Marge, we've been over this!' he starts... ")
